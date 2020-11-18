@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vx9-c5-DfZ">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lottie View Controller-->
+        <scene sceneID="mkF-Kk-x5M">
+            <objects>
+                <viewController id="vx9-c5-DfZ" customClass="LottieViewController" customModule="PlatziFinanzas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2jV-Ge-CJ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHc-DC-RKb" customClass="LOTAnimatedControl">
+                                <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="f9w-Nr-pCL"/>
+                                    <constraint firstAttribute="height" constant="250" id="wlx-8I-w0h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="FacebookColor"/>
+                        <constraints>
+                            <constraint firstItem="bHc-DC-RKb" firstAttribute="centerY" secondItem="2jV-Ge-CJ1" secondAttribute="centerY" id="TlP-aG-2C4"/>
+                            <constraint firstItem="bHc-DC-RKb" firstAttribute="centerX" secondItem="2jV-Ge-CJ1" secondAttribute="centerX" id="q78-9n-2cd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ldw-4q-esX"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="bHc-DC-RKb" id="bA1-qc-a9q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yms-b8-Gra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="FacebookColor">
+            <color red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

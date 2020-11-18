@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="61V-Xn-rA8">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transactions-->
+        <scene sceneID="j1e-l0-fh6">
+            <objects>
+                <viewController id="yc7-kk-ZWK" customClass="TransactionsViewController" customModule="PlatziFinanzas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jEN-4h-3oi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fd3-aj-viQ">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="yc7-kk-ZWK" id="i6D-KQ-6Dg"/>
+                                    <outlet property="delegate" destination="yc7-kk-ZWK" id="xJD-Vp-iZL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bsc-KD-ObE"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fd3-aj-viQ" firstAttribute="leading" secondItem="Bsc-KD-ObE" secondAttribute="leading" id="HTJ-gU-gEl"/>
+                            <constraint firstItem="fd3-aj-viQ" firstAttribute="top" secondItem="Bsc-KD-ObE" secondAttribute="top" id="g4R-F3-atL"/>
+                            <constraint firstAttribute="bottom" secondItem="fd3-aj-viQ" secondAttribute="bottom" id="u7F-Gh-tiQ"/>
+                            <constraint firstItem="Bsc-KD-ObE" firstAttribute="trailing" secondItem="fd3-aj-viQ" secondAttribute="trailing" id="wb8-iF-vGS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transactions" id="A9P-Wi-x1t"/>
+                    <connections>
+                        <outlet property="tableView" destination="fd3-aj-viQ" id="28t-OK-rxC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eEL-on-oeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586.9565217391305" y="691.74107142857144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uEp-kM-NO1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="61V-Xn-rA8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="TabBarTransaction" id="1aV-D6-FBZ"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="g3m-mp-3zd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="GreenColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yc7-kk-ZWK" kind="relationship" relationship="rootViewController" id="b9f-8A-pP5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lWn-4Q-fu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648.79999999999995" y="692.20389805097454"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabBarTransaction" width="20" height="20"/>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

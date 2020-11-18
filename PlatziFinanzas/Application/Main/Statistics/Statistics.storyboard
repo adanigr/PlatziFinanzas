@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yux-Du-ItV">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Statistics-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlatziFinanzas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="dF1-xv-tbb">
+                                <rect key="frame" x="20" y="116" width="335" height="482"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="KE8-0v-LWh">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="146.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sea-OQ-DmV">
+                                                <rect key="frame" x="0.0" y="0.0" width="157" height="146.5"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QKX-iw-VKt">
+                                                        <rect key="frame" x="48.5" y="23.5" width="60" height="60"/>
+                                                        <color key="backgroundColor" name="FacebookColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="Nzz-At-MvT"/>
+                                                            <constraint firstAttribute="width" constant="60" id="d5R-kH-twj"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadius">
+                                                                <integer key="value" value="18"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfP-eC-5x1">
+                                                        <rect key="frame" x="57" y="103.5" width="43.5" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="QKX-iw-VKt" firstAttribute="centerY" secondItem="sea-OQ-DmV" secondAttribute="centerY" constant="-20" id="KH6-T2-g2O"/>
+                                                    <constraint firstItem="GfP-eC-5x1" firstAttribute="top" secondItem="QKX-iw-VKt" secondAttribute="bottom" constant="20" id="Ozk-3c-mrs"/>
+                                                    <constraint firstItem="QKX-iw-VKt" firstAttribute="centerX" secondItem="sea-OQ-DmV" secondAttribute="centerX" id="Um1-XT-oJG"/>
+                                                    <constraint firstItem="GfP-eC-5x1" firstAttribute="centerX" secondItem="sea-OQ-DmV" secondAttribute="centerX" id="bHO-uP-1ms"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                        <size key="value" width="1" height="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                        <real key="value" value="0.14999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                                        <color key="value" name="FacebookColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1O0-tc-h3E">
+                                                <rect key="frame" x="178" y="0.0" width="157" height="146.5"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GDp-ij-Vls">
+                                                        <rect key="frame" x="48.5" y="23.5" width="60" height="60"/>
+                                                        <color key="backgroundColor" name="FacebookColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="HE7-27-VqO"/>
+                                                            <constraint firstAttribute="width" constant="60" id="gPW-na-WS0"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadius">
+                                                                <integer key="value" value="18"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hl-bj-24M">
+                                                        <rect key="frame" x="57" y="103.5" width="43.5" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="9hl-bj-24M" firstAttribute="top" secondItem="GDp-ij-Vls" secondAttribute="bottom" constant="20" id="BOa-wc-WLA"/>
+                                                    <constraint firstItem="GDp-ij-Vls" firstAttribute="centerX" secondItem="1O0-tc-h3E" secondAttribute="centerX" id="DlJ-GN-wR7"/>
+                                                    <constraint firstItem="GDp-ij-Vls" firstAttribute="centerY" secondItem="1O0-tc-h3E" secondAttribute="centerY" constant="-20" id="M1j-X0-FuB"/>
+                                                    <constraint firstItem="9hl-bj-24M" firstAttribute="centerX" secondItem="1O0-tc-h3E" secondAttribute="centerX" id="Uw4-uw-wTv"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                        <size key="value" width="1" height="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                        <real key="value" value="0.14999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                                        <color key="value" name="FacebookColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="sea-OQ-DmV" firstAttribute="leading" secondItem="KE8-0v-LWh" secondAttribute="leading" id="DwU-U6-UQo"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="qMo-qT-zpf">
+                                        <rect key="frame" x="0.0" y="167.5" width="335" height="147"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHd-pB-2Id">
+                                                <rect key="frame" x="0.0" y="0.0" width="157" height="147"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Co-3l-agg">
+                                                        <rect key="frame" x="48.5" y="23.5" width="60" height="60"/>
+                                                        <color key="backgroundColor" name="FacebookColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="E80-dz-vd1"/>
+                                                            <constraint firstAttribute="width" constant="60" id="npk-wX-5Yn"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadius">
+                                                                <integer key="value" value="18"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pa-AQ-vu1">
+                                                        <rect key="frame" x="57" y="103.5" width="43.5" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="1Pa-AQ-vu1" firstAttribute="centerX" secondItem="bHd-pB-2Id" secondAttribute="centerX" id="TTQ-Xg-Eic"/>
+                                                    <constraint firstItem="1Pa-AQ-vu1" firstAttribute="top" secondItem="7Co-3l-agg" secondAttribute="bottom" constant="20" id="aOr-Fn-3nW"/>
+                                                    <constraint firstItem="7Co-3l-agg" firstAttribute="centerX" secondItem="bHd-pB-2Id" secondAttribute="centerX" id="dMN-Jl-TEF"/>
+                                                    <constraint firstItem="7Co-3l-agg" firstAttribute="centerY" secondItem="bHd-pB-2Id" secondAttribute="centerY" constant="-20" id="tLT-w6-Ytb"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                        <size key="value" width="1" height="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                        <real key="value" value="0.14999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                                        <color key="value" name="FacebookColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3x-2B-a7S">
+                                                <rect key="frame" x="178" y="0.0" width="157" height="147"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sla-Hv-Rwh">
+                                                        <rect key="frame" x="48.5" y="23.5" width="60" height="60"/>
+                                                        <color key="backgroundColor" name="FacebookColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="ejF-1N-4I7"/>
+                                                            <constraint firstAttribute="width" constant="60" id="g7w-py-MsO"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadius">
+                                                                <integer key="value" value="18"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHf-2O-7co">
+                                                        <rect key="frame" x="57" y="103.5" width="43.5" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Sla-Hv-Rwh" firstAttribute="centerX" secondItem="p3x-2B-a7S" secondAttribute="centerX" id="4Gc-i7-IZ1"/>
+                                                    <constraint firstItem="yHf-2O-7co" firstAttribute="top" secondItem="Sla-Hv-Rwh" secondAttribute="bottom" constant="20" id="KAg-rt-Kj4"/>
+                                                    <constraint firstItem="Sla-Hv-Rwh" firstAttribute="centerY" secondItem="p3x-2B-a7S" secondAttribute="centerY" constant="-20" id="M9y-lO-GjV"/>
+                                                    <constraint firstItem="yHf-2O-7co" firstAttribute="centerX" secondItem="p3x-2B-a7S" secondAttribute="centerX" id="ZQD-O2-13Y"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                        <size key="value" width="1" height="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                        <real key="value" value="0.14999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                                        <color key="value" name="FacebookColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="NvV-ag-XxW">
+                                        <rect key="frame" x="0.0" y="335.5" width="335" height="146.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMr-8c-vzC">
+                                                <rect key="frame" x="0.0" y="0.0" width="157" height="146.5"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sf8-O8-oFy">
+                                                        <rect key="frame" x="48.5" y="23" width="60" height="60"/>
+                                                        <color key="backgroundColor" name="FacebookColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="WF1-8C-Jzw"/>
+                                                            <constraint firstAttribute="height" constant="60" id="yW4-Wt-QES"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadius">
+                                                                <integer key="value" value="18"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jY0-EL-Es3">
+                                                        <rect key="frame" x="57" y="103" width="43.5" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="jY0-EL-Es3" firstAttribute="centerX" secondItem="IMr-8c-vzC" secondAttribute="centerX" id="Cai-FU-zOs"/>
+                                                    <constraint firstItem="Sf8-O8-oFy" firstAttribute="centerX" secondItem="IMr-8c-vzC" secondAttribute="centerX" id="LjF-IF-7cL"/>
+                                                    <constraint firstItem="jY0-EL-Es3" firstAttribute="top" secondItem="Sf8-O8-oFy" secondAttribute="bottom" constant="20" id="cOe-Kh-s3u"/>
+                                                    <constraint firstItem="Sf8-O8-oFy" firstAttribute="centerY" secondItem="IMr-8c-vzC" secondAttribute="centerY" constant="-20" id="txV-4C-X5H"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                        <size key="value" width="1" height="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                        <real key="value" value="0.14999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                                        <color key="value" name="FacebookColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5j-R2-c3H">
+                                                <rect key="frame" x="178" y="0.0" width="157" height="146.5"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UrS-o8-oer">
+                                                        <rect key="frame" x="48.5" y="23" width="60" height="60"/>
+                                                        <color key="backgroundColor" name="FacebookColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="YX8-BS-dOA"/>
+                                                            <constraint firstAttribute="width" constant="60" id="k5B-r2-5Vd"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadius">
+                                                                <integer key="value" value="18"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xl6-Sp-JdW">
+                                                        <rect key="frame" x="57" y="103" width="43.5" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Xl6-Sp-JdW" firstAttribute="centerX" secondItem="I5j-R2-c3H" secondAttribute="centerX" id="DWc-0u-TUV"/>
+                                                    <constraint firstItem="UrS-o8-oer" firstAttribute="centerY" secondItem="I5j-R2-c3H" secondAttribute="centerY" constant="-20" id="LPf-yB-SGh"/>
+                                                    <constraint firstItem="UrS-o8-oer" firstAttribute="centerX" secondItem="I5j-R2-c3H" secondAttribute="centerX" id="YfA-09-Jy6"/>
+                                                    <constraint firstItem="Xl6-Sp-JdW" firstAttribute="top" secondItem="UrS-o8-oer" secondAttribute="bottom" constant="20" id="lE7-NQ-xba"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                        <size key="value" width="1" height="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                        <real key="value" value="0.14999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                                        <color key="value" name="FacebookColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KE8-0v-LWh" firstAttribute="leading" secondItem="dF1-xv-tbb" secondAttribute="leading" id="3Nf-Te-AKt"/>
+                                    <constraint firstAttribute="trailing" secondItem="qMo-qT-zpf" secondAttribute="trailing" id="7uj-zf-1yG"/>
+                                    <constraint firstAttribute="trailing" secondItem="NvV-ag-XxW" secondAttribute="trailing" id="9kd-py-RFR"/>
+                                    <constraint firstAttribute="trailing" secondItem="KE8-0v-LWh" secondAttribute="trailing" id="Rso-zs-QeT"/>
+                                    <constraint firstItem="NvV-ag-XxW" firstAttribute="leading" secondItem="dF1-xv-tbb" secondAttribute="leading" id="iMq-Qg-S3O"/>
+                                    <constraint firstItem="qMo-qT-zpf" firstAttribute="leading" secondItem="dF1-xv-tbb" secondAttribute="leading" id="xJ0-4D-mPX"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dF1-xv-tbb" secondAttribute="bottom" constant="20" id="7Yz-C0-bva"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dF1-xv-tbb" secondAttribute="trailing" constant="20" id="9rl-r1-i40"/>
+                            <constraint firstItem="dF1-xv-tbb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dee-gv-vMA"/>
+                            <constraint firstItem="dF1-xv-tbb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fqG-80-QoY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Statistics" id="1dV-ra-uS3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="1453.2233883058473"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uKq-Ce-abE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yux-Du-ItV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="TabBarStatistics" id="08F-ia-462"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="AHz-xq-Zzd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="GreenColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dB6-N1-flk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8X-Hg-xoT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648.79999999999995" y="1452.3238380809596"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabBarStatistics" width="17" height="18"/>
+        <namedColor name="FacebookColor">
+            <color red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
